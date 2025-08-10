@@ -1,7 +1,13 @@
 {
-    
   "programmes": [
-    
+    {
+      "id": "a8a6",
+      "titre": "HJHHHH",
+      "description": "hhhghg",
+      "duree": "KKKKK",
+      "competences": [
+        "KKKK"
+      ]
+    }
   ]
-
 }
