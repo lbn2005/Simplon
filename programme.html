@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./simplon.css">
+
+<body>
+  <style>
+#recherche{
+  display: flex;
+  align-items: center;
+  width: 89%;
+  margin-left: 27px;
+  border: 0.5mm gray solid;
+
+}
+#list{
+    display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+}
+#form{
+  display:grid;
+  grid-template-columns:none;
+  
+  width: 40%;
+margin: 50px auto;
+  
+}
+  #hdaux{
+    text-align: center;
+    font-size: 27px;
+  }
+  h1 { 
+    color: #16610E;
+    font-size: 59px;
+   }
+    .programme {
+      background: white;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    form {
+       background: white;
+       padding: 15px; 
+       border-radius: 8px; 
+       margin-bottom: 2px; 
+      }
+    label {
+       display: block;
+       margin-top: 10px;
+       }
+    input, textarea {
+      width: 96%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #16610E;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover { background: #8EB486; }
+
+
+  </style>
+    <div class="navigateur">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP1FppkVKmxHUBjHasaWUGhmd-VmARULIAcg&s"alt="Simplon" class="img1">
+       <div class="link">
+        <a href="./home.html">Home🏠</a>
+        <a href="./programme.html">Programme📚</a>
+        <a href="./contact.html">Contact☎ </a>
+        </div>
+    </div>
+    
+  <h1>Liste des Programmes</h1>
+  <input type="text" placeholder="Rechercher un programe" id="recherche">
+<!-- <div> liste des programmes </div> -->
+   <div id="programmes-list">
+    <!-- Les programmes chargés dynamiquement ici -->
+  </div>
+
+
+  <div id="list">
+  </div>
+  <h2 id="hdaux">Ajouter un nouveau programme</h2>
+  <form id="form">
+    <label for="titre">Titre</label>
+    <input type="text" id="titre" required  placeholder="Titre..">
+
+    <label for="description">Description</label>
+    <textarea id="Description" required placeholder="description"></textarea>
+
+    <label for="duree">Durée</label>
+    <input type="text" id="duree" required / placeholder="en semaines ou mois">
+
+    <label for="competences">Compétences (séparées par des virgules)</label>
+    <input type="text" id="competences" required />
+
+    <button type="submit">Ajouter</button>
+  </form>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="./programme.js"></script>
+
+</body>
+</html>

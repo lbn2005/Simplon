@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./simplon.css">
+<body>
+    <style>
+  .contenire {
+  font-family: Arial, sans-serif;
+  background-color: #FAF9EE;
+  
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:  222px;
+  
+  
+  }
+  .personnel{
+    
+  gap: 30px;
+  background: A1B57D;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 16 4px 8px rgba(0, 0, 0, 0.3);
+    
+
+  }
+  input.personnel{
+    gap: 12px;
+  }
+  h2.personnel{
+    /* text-align: start;
+    display: flex;
+    gap: 20px; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  }
+  input,textarea,select{
+    width: 96%;
+    padding: 8px;
+    border: #A1B57D solid ;
+    border-radius: 12px;
+
+  }
+  .inf{
+    margin: 12px;
+  }
+  button{
+    width: 96%;
+    background-color: #0A400C;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+  }
+  button:hover{
+    background-color: #328E6E;
+  }
+  h2 {
+  text-align: start;
+  margin-bottom: 20px;
+  font-size: 34px;
+  }
+  .form-section{
+    background-color: #0A400C;
+    padding: 30px 40px;
+    width: fit-content;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+     margin-top: 23px;
+     color: white;
+  }
+  h2,p.form-section{
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 44px;
+  }
+  .form-section h2{
+    text-align: center;
+    
+  }
+  .form-section p{
+    font-size: 20px;
+    
+  }
+     footer.copy{
+      margin-top: 155px;
+      background-color:#73946B;
+      padding: 14px;
+      color: white;
+      text-align: center;
+    
+    }   
+    a.local{
+      color: rgb(171, 165, 165);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    </style>
+
+
+
+
+ <div class="navigateur">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP1FppkVKmxHUBjHasaWUGhmd-VmARULIAcg&s"alt="Simplon" class="img1">
+       <div class="link">
+        <a href="./home.html">Home🏠</a>
+        <a href="./programme.html">Programme📚</a>
+        <a href="./contact.html">Contact☎ </a>
+        </div>
+    </div>
+
+
+
+       <div class="contenire">
+        <div class="personnel">
+               <h2>Contactez-nous</h2>
+      <form>
+        <div class="inf">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" placeholder="Nom.." required>
+   </div>
+
+   <div class="inf">
+        <label for="prenom">Prénomme:</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Prénomme.." required>
+    </div>
+
+<div class="inf">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required   placeholder="Email..">
+</div>
+
+
+<div class="inf">
+
+        <label for="message">Adresse:</label>
+        <textarea id="adresse" name="adresse" required   placeholder="Adresse.."></textarea>
+</div>
+
+
+<div class="inf">
+
+      <label>Sexe</label>
+            <select >
+                <option>Sélectionnez votre sexe</option>
+                <option>Homme</option>
+                <option>Femme</option>
+            </select> 
+             <label>Sexe</label>
+</div>
+
+
+<div class="inf">
+  <label >Région</label>
+
+            <select>
+                <option>Sélectionnez votre Région</option>
+                <option>Tanger - Tétouan - Al Hoceima</option>
+                <option>L'Oriental</option>
+                <option>Fès - Meknès</option>
+                <option>Rabat - Salé - Kénitra</option>
+                <option> Beni Mellal - Khénifra</option>
+                <option>Casablanca - Settat</option>
+                <option>Marrakech - Safi</option>
+                <option>Drâa - Tafilalet</option>
+                <option> Souss -Massa</option>
+                <option>Guelmim - Oued Noun</option>
+                <option>Laâyoune - Saguia al Hamra</option>
+                <option>Dakhla - Oued Ed-Dahab</option>
+            </select>
+</div>
+
+
+<div class="inf">
+
+
+        <button type="submit">Send</button>
+</div>
+
+      </form>
+    </div>
+        
+       
+    <div class="form-section">
+      <h2>Notre Information</h2>
+      <div class="company-info">
+        <p><strong>Nom:</strong> Simplon Code</p>
+        <p><strong>Adress:</strong>4ème étage, Numéro26, Sis Immeuble Walili Street, 42 Bd Abdelmoumen, Casablanca 20340</p>
+        <p><strong>Téléphone:</strong> +212 520-846371 </p>
+        <p><strong>Email:</strong> Simploncode@gmail.com</p>
+        <p> <a href="https://maps.app.goo.gl/uTZK9PpxtSec2Nid6" target="_blank" class="local">   🌎Voire sur la carte</a></p>
+      </div>
+    </div>
+     </div>
+  
+<footer class="copy">
+  <h4>© Copyright 2025 Simplon Maghreb, Inc. Tous droits réservés. Mentions légales</h4>
+</footer>
+
+  
+</body>
+</html>
