@@ -20,8 +20,8 @@ const apiURL = "http://localhost:3000/programmes";
           <h3>${p.titre}</h3>
           <p>${p.description}</p>
           <p><strong>Durée:</strong> ${p.duree}</p>
-          <p><strong>Compétences:</strong> ${p.competences.join(", ")}</p>
-          <button id="supprimer" oncklic="supprimerprogramme('${p.id}')"> Supprimer</button>
+          <p><strong>Compétences:</strong> <span>${p.competences.join(", ")} </span></p>
+          <button id="supprimer" onclick="supprimerprogramme('${p.id}')"> Supprimer</button>
         `;
          programmesList.appendChild(div);
       });
